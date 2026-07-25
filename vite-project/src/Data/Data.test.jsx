@@ -1,6 +1,4 @@
 import { describe, expect, it } from 'vitest'
-import { isValidElement } from 'react'
-import { AiFillStar } from 'react-icons/ai'
 import data from './Data.js'
 
 const CATEGORIES = ['sneakers', 'flats', 'sandals', 'heels']
@@ -22,8 +20,8 @@ describe('product data', () => {
           'img',
           'newPrice',
           'prevPrice',
+          'rating',
           'reviews',
-          'star',
           'title',
         ].sort(),
       )
@@ -31,16 +29,7 @@ describe('product data', () => {
   })
 
   it('uses non-empty strings for every textual field', () => {
-    const textFields = [
-      'img',
-      'title',
-      'reviews',
-      'prevPrice',
-      'newPrice',
-      'company',
-      'color',
-      'category',
-    ]
+    const textFields = ['img', 'title', 'company', 'color', 'category']
     for (const product of data) {
       for (const field of textFields) {
         expect(typeof product[field], `${product.title}.${field}`).toBe('string')
@@ -55,19 +44,20 @@ describe('product data', () => {
     }
   })
 
-  it('renders a star icon element for every product', () => {
+  it('rates every product between 0 and 5', () => {
     for (const product of data) {
-      expect(isValidElement(product.star)).toBe(true)
-      expect(product.star.type).toBe(AiFillStar)
-      expect(product.star.props.className).toBe('rating-star')
+      expect(typeof product.rating, product.title).toBe('number')
+      expect(product.rating).toBeGreaterThan(0)
+      expect(product.rating).toBeLessThanOrEqual(5)
     }
   })
 
-  it('prices newPrice as a positive number and prevPrice as a currency string', () => {
+  it('stores prices and review counts as positive numbers', () => {
     for (const product of data) {
-      expect(Number.isNaN(Number(product.newPrice))).toBe(false)
-      expect(Number(product.newPrice)).toBeGreaterThan(0)
-      expect(product.prevPrice).toMatch(/^\$\d+([.,]\d{2})?$/)
+      for (const field of ['prevPrice', 'newPrice', 'reviews']) {
+        expect(typeof product[field], `${product.title}.${field}`).toBe('number')
+        expect(product[field], `${product.title}.${field}`).toBeGreaterThan(0)
+      }
     }
   })
 
