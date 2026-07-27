@@ -7,7 +7,7 @@ const Searchbar = () => {
         placeholder='Enter to search'
         type='text'
         />
-        <div className='flex items-center pr-4 gap-4'>
+        <div className='flex items-center pr-4 gap-6'>
           <ShoppingCart />
           < Heart />
            < User2Icon />
