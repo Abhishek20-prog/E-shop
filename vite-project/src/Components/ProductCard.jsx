@@ -4,7 +4,7 @@ import { AiFillStar } from "react-icons/ai";
 function ProductCard({product}) {
   return (
     <main className=" border-gray-100 border-2 rounded-lg m-3">
-    <div className="flex flex-col items-center justify-center h-40 w-50 p-2 ">
+    <div className="flex flex-col items-center justify-center h-50 w-50 p-2 ">
       <img src={product.img} alt={product.title} width={200} height={100} />
        </div>
 <div className="p-4 m-4"> 
@@ -17,14 +17,14 @@ function ProductCard({product}) {
        
       </p>
 
-      <p> </p>
+      
 
       <p>
         <del>${product.prevPrice}</del>
         {" "}
         ${product.newPrice}
       </p>
-      
+
       </div>
      
 

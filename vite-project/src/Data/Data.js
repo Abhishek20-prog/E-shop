@@ -1,6 +1,6 @@
 
 const products = [
-   {
+   { id: 1,
     img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
     title: "Nike Air Monarch IV",
     rating: 4.8,
@@ -11,7 +11,7 @@ const products = [
     color: "white",
     category: "sneakers",
   },
-  {
+  { id:2,
     img: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
     title: "Nike Air Vapormax Plus",
     rating: 4.6,
@@ -22,7 +22,7 @@ const products = [
     color: "red",
     category: "sneakers",
   },
-  {
+  { id: 3,
     img: "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
     title: "Nike Waffle One Sneaker",
     rating: 4.7,
@@ -33,7 +33,7 @@ const products = [
     color: "green",
     category: "sneakers",
   },
-  {
+  { id: 4,
     img: "https://m.media-amazon.com/images/I/71oEKkghg-L._AC_UX575_.jpg",
     title: "Nike Running Shoe",
     rating: 4.4,
@@ -44,7 +44,7 @@ const products = [
     color: "black",
     category: "sneakers",
   },
-  {
+  { id: 5,
     img: "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg",
     title: "Flat Slip On Pumps",
     rating: 4.2,
@@ -55,7 +55,7 @@ const products = [
     color: "green",
     category: "flats",
   },
-  {
+  { id: 6,
     img: "https://m.media-amazon.com/images/I/71zKuNICJAL._AC_UX625_.jpg",
     title: "Knit Ballet Flat",
     rating: 4.5,
@@ -68,7 +68,7 @@ const products = [
   },
 
 
-  {
+  { id: 7,
     img: "https://m.media-amazon.com/images/I/61V9APfz97L._AC_UY695_.jpg",
     title: "Loafer Flats",
      rating: 4.5,
@@ -80,7 +80,7 @@ const products = [
     category: "flats",
   },
 
-  {
+  { id: 8,
     img: "https://m.media-amazon.com/images/I/71VaQ+V6XnL._AC_UY695_.jpg",
     title: "Nike Zoom Freak",
      rating: 4.5,
@@ -92,7 +92,7 @@ const products = [
     category: "sneakers",
   },
 
-  {
+  { id: 9,
     img: "https://m.media-amazon.com/images/I/61-cBsLhJHL._AC_UY695_.jpg",
     title: "Nike Men's Sneaker",
      rating: 4.5,
@@ -104,7 +104,7 @@ const products = [
     category: "sneakers",
   },
 
-  {
+  { id: 10,
     img: "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
     title: "PUMA BLACK-OCE",
     rating: 4.5,
@@ -115,7 +115,7 @@ const products = [
     color: "green",
     category: "sneakers",
   },
-  {
+  { id: 11,
     img: "https://m.media-amazon.com/images/I/71E75yRwCDL._AC_UY575_.jpg",
     title: "Pacer Future Sneaker",
      rating: 4.5,
@@ -126,7 +126,7 @@ const products = [
     color: "red",
     category: "sneakers",
   },
-  {
+  { id: 12,
     img: "https://m.media-amazon.com/images/I/71jeoX0rMBL._AC_UX575_.jpg",
     title: "Unisex-Adult Super",
      rating: 4.5,
@@ -137,7 +137,7 @@ const products = [
     color: "black",
     category: "sneakers",
   },
-  {
+  { id: 13,
     img: "https://m.media-amazon.com/images/I/61TM6Q9dvxL._AC_UX575_.jpg",
     title: "Roma Basic Sneaker",
      rating: 4.5,
@@ -148,7 +148,7 @@ const products = [
     color: "white",
     category: "sneakers",
   },
-  {
+  { id: 14,
     img: "https://m.media-amazon.com/images/I/7128-af7joL._AC_UY575_.jpg",
     title: "Pacer Future Doubleknit",
      rating: 4.5,
@@ -160,7 +160,7 @@ const products = [
     category: "sneakers",
   },
 
-  {
+  { id: 15,
     img: "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
     title: "Fusion Evo Golf Shoe",
     rating: 4.5,
@@ -171,7 +171,7 @@ const products = [
     color: "green",
     category: "sneakers",
   },
-  {
+  { id: 16,
     img: "https://m.media-amazon.com/images/I/719gdz8lsTS._AC_UX575_.jpg",
     title: "Rainbow Chex Skate",
      rating: 4.5,
@@ -182,7 +182,7 @@ const products = [
     color: "red",
     category: "flats",
   },
-  {
+  { id: 17,
     img: "https://m.media-amazon.com/images/I/71gpFHJlnoL._AC_UX575_.jpg",
     title: "Low-Top Trainers",
      rating: 4.5,
@@ -193,7 +193,7 @@ const products = [
     color: "white",
     category: "sandals",
   },
-  {
+  { id: 18,
     img: "https://m.media-amazon.com/images/I/71pf7VFs9CL._AC_UX575_.jpg",
     title: "Vans Unisex Low-Top",
     rating: 4.5,
@@ -204,7 +204,7 @@ const products = [
     color: "blue",
     category: "sandals",
   },
-  {
+  { id: 19,
     img: "https://m.media-amazon.com/images/I/61N4GyWcHPL._AC_UY575_.jpg",
     title: "Classic Bandana Sneakers",
      rating: 4.5,
@@ -215,7 +215,7 @@ const products = [
     color: "black",
     category: "sandals",
   },
-  {
+  { id: 21,
     img: "https://m.media-amazon.com/images/I/61bncQ44yML._AC_UX695_.jpg",
     title: "Chunky High Heel",
      rating: 4.5,
@@ -226,7 +226,7 @@ const products = [
     color: "black",
     category: "heels",
   },
-  {
+  { id: 22,
     img: "https://m.media-amazon.com/images/I/71czu7WgGuL._AC_UY695_.jpg",
     title: "Slip On Stiletto High Heel",
      rating: 4.5,
@@ -237,7 +237,7 @@ const products = [
     color: "black",
     category: "heels",
   },
-  {
+  { id: 23,
     img: "https://m.media-amazon.com/images/I/61men05KRxL._AC_UY625_.jpg",
     title: "DREAM PAIRS Court Shoes",
      rating: 4.5,
@@ -248,7 +248,7 @@ const products = [
     color: "red",
     category: "heels",
   },
-  {
+  { id: 24,
     img: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
     title: "Nike Air Vapormax Plus",
      rating: 4.5,
@@ -260,7 +260,7 @@ const products = [
     category: "sneakers",
   },
 
-  {
+  { id: 25,
     img: "https://m.media-amazon.com/images/I/51PGWTXgf-L._AC_UY625_.jpg",
     title: "Low Mid Block Heels",
      rating: 4.5,
@@ -271,7 +271,7 @@ const products = [
     color: "black",
     category: "heels",
   },
-  {
+  { id: 26,
     img: "https://m.media-amazon.com/images/I/616sA5XUKtL._AC_UY675_.jpg",
     title: "Chunky High Heel",
     rating: 4.5,
@@ -282,7 +282,7 @@ const products = [
     color: "black",
     category: "heels",
   },
-  {
+  { id: 27,
     img: "https://m.media-amazon.com/images/I/71h5+MbEK7L._AC_UY625_.jpg",
     title: "Amore Fashion Stilettos",
     rating: 4.5,
@@ -293,7 +293,7 @@ const products = [
     color: "white",
     category: "heels",
   },
-  {
+  { id: 28,
     img: "https://m.media-amazon.com/images/I/61uw5RDxKQL._AC_UY625_.jpg",
     title: "Bridal Sandals Glitter",
      rating: 4.5,
@@ -304,7 +304,7 @@ const products = [
     color: "black",
     category: "heels",
   },
-  {
+  { id: 29,
     img: "https://m.media-amazon.com/images/I/71yhoZP0l6L._AC_UY695_.jpg",
     title: "Wedding Prom Bridal",
     rating: 4.5,

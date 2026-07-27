@@ -1,17 +1,29 @@
 import Searchbar from "./Searchbar";
 import ProductCard from "./ProductCard";
+import products from "../Data/Data";
 
-function ProductGrid({ products }) {
+
+function ProductGrid({ selectedCategory  }) {
+  const filteredProducts =
+    selectedCategory === "All"
+      ? products
+      : products.filter(
+          (product) =>
+            product.category === selectedCategory
+        );
+
   return (
     <main>
       <Searchbar/>
-    <div className="grid grid-cols-5 gap-4">
-      {products.map((product) => (
+      <div className="grid grid-cols-4 gap-3">
+
+      {filteredProducts.map((product) => (
         <ProductCard
-          key={product.title}
+          key={product.id}
           product={product}
         />
       ))}
+
     </div>
     </main>
   );
