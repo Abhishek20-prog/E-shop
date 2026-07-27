@@ -23,7 +23,9 @@ function ProductCard({product}) {
         <del>${product.prevPrice}</del>
         {" "}
         ${product.newPrice}
-      </p></div>
+      </p>
+      
+      </div>
      
 
       
