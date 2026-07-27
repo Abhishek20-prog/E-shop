@@ -1,11 +1,15 @@
-import products from "./Data/Data";
-import ProductGrid from "./Components/ProductGrid";
+
+
+
+import Page from "./Components/Page";
 
 function App() {
   return (
-    <>
-      <ProductGrid products={products} />
-    </>
+    <main>
+     
+      <Page/>
+  
+    </main>
   );
 }
 
