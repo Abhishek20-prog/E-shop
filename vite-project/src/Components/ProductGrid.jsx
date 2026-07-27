@@ -1,7 +1,10 @@
+import Searchbar from "./Searchbar";
 import ProductCard from "./ProductCard";
 
 function ProductGrid({ products }) {
   return (
+    <main>
+      <Searchbar/>
     <div className="grid grid-cols-5 gap-4">
       {products.map((product) => (
         <ProductCard
@@ -10,6 +13,7 @@ function ProductGrid({ products }) {
         />
       ))}
     </div>
+    </main>
   );
 }
 
