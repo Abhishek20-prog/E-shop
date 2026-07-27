@@ -19,7 +19,7 @@ function App() {
     <main className='flex '>
       <div className='flex flex-col w-50 m-3 h-screen  border-gray-100 border-2 p-5  items-center'>
         <ShoppingBag size={24} />
-        <Category
+        <Category 
           selectedCategory={selectedCategory}
           setCategory={setCategory}
         />

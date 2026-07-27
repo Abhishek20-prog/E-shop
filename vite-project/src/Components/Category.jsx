@@ -3,7 +3,7 @@ const Category = ({ selectedCategory, setCategory }) => {
   
   return (
     <div>
-      <h2 className="font-bold mb-4">Category</h2>
+      <h2 className="font-bold mb-4 pt-6">Category</h2>
 
       <div className="flex flex-col gap-3">
 
