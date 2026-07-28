@@ -2,8 +2,9 @@ import Searchbar from "./Searchbar";
 import ProductCard from "./ProductCard";
 import products from "../Data/Data";
 
-function ProductGrid({ selectedCategory, selectedColor , selectedPrice }) {
-  const filteredProducts = products.filter((product) => {
+function ProductGrid({ selectedCategory, selectedColor , selectedPrice , searchInput,}) {
+ const filteredProducts = products.filter((product) => {
+
   const categoryMatch =
     selectedCategory === "All" ||
     product.category === selectedCategory;
@@ -24,12 +25,20 @@ function ProductGrid({ selectedCategory, selectedColor , selectedPrice }) {
     priceMatch = product.newPrice > 150;
   }
 
-  return categoryMatch && colorMatch && priceMatch;
+  const searchMatch =
+    product.title.toLowerCase().includes(searchInput.toLowerCase());
+
+  return (
+    categoryMatch &&
+    colorMatch &&
+    priceMatch &&
+    searchMatch
+  );
 });
 
   return (
     <main>
-      <Searchbar />
+      {/* <Searchbar /> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredProducts.map((product) => (

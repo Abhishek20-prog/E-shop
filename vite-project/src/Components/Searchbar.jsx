@@ -1,12 +1,16 @@
 import React from 'react'
 import { Search , ShoppingCart ,Heart , User2Icon } from 'lucide-react'
-const Searchbar = () => {
+const Searchbar = ({ searchInput, setSearchInput }) => {
   return (
     <div className=" border-gray-100 border-2 rounded-lg m-3 flex justify-between">
-        <input className='bg-gray-300 m-2 p-2  border-gray-100 border-2 rounded-lg'
-        placeholder='Enter to search'
-        type='text'
-        />
+      <input
+    
+      type="text"
+      placeholder="Search..."
+      value={searchInput}
+      onChange={(e) => setSearchInput(e.target.value)}
+      className="border-gray-300 p-2 rounded w-50 m-4 bg-gray-100"
+    />
         <div className='flex items-center pr-4 gap-6'>
           <ShoppingCart />
           < Heart />
