@@ -1,19 +1,19 @@
-
-
-
 import { useState } from 'react';
-
 import Category from './Components/Category';
 import ProductGrid from './Components/ProductGrid';
 import {
   ShoppingCart,
   ShoppingBasket,
   ShoppingBag,
-
   Package,
 } from "lucide-react";
+import { use } from 'react';
+import Colors from './Components/Colors';
+import Price from './Components/Price';
 function App() {
   const [selectedCategory, setCategory] = useState("All");
+  const [selectedPrice, setPrice] = useState("All");
+  const[selectedColor , setColor] = useState("All")
 
   return (
     <main className='flex '>
@@ -23,10 +23,20 @@ function App() {
           selectedCategory={selectedCategory}
           setCategory={setCategory}
         />
+        <Colors
+          selectedColor={selectedColor}
+          setColor={setColor}
+        />
+        <Price
+          selectedPrice={selectedPrice}
+          setPrice={setPrice}
+        />
       </div>
 
       <ProductGrid
         selectedCategory={selectedCategory}
+         selectedColor={selectedColor}
+          selectedPrice={selectedPrice}
       />
 
 
